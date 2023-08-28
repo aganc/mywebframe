@@ -1,10 +1,3 @@
-/**************************************************************
- * Copyright (c) 2021 anxin.com, Inc. All Rights Reserved
- * User: zhangdongsheng<zhangdongsheng@anxin.com>
- * Date: 2021/9/5
- * Desc:
- **************************************************************/
-
 package utils
 
 import (
@@ -12,18 +5,18 @@ import (
 	"runtime"
 )
 
-//获取调用者的函数名字
+// 获取调用者的函数名字
 func GetCallerName(a interface{}) string {
 	return runtime.FuncForPC(reflect.ValueOf(a).Pointer()).Name()
 }
 
-////获取本函数的名字
+// //获取本函数的名字
 func PrintMyFuncName() string {
 	pc, _, _, _ := runtime.Caller(1)
 	return runtime.FuncForPC(pc).Name()
 }
 
-//获取调用者的函数名字
+// 获取调用者的函数名字
 func PrintCallerName() string {
 	pc, _, _, _ := runtime.Caller(2)
 	return runtime.FuncForPC(pc).Name()

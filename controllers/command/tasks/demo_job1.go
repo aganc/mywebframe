@@ -1,10 +1,3 @@
-/**************************************************************
- * Copyright (c) 2021 anxin.com, Inc. All Rights Reserved
- * User: zhangdongsheng<zhangdongsheng@anxin.com>
- * Date: 2021/9/5
- * Desc:
- **************************************************************/
-
 package tasks
 
 import (

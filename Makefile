@@ -3,7 +3,7 @@ GOCMD=GO111MODULE=on go
 GOBUILD=$(GOCMD) build
 GOTEST=$(GOCMD) test
 GOLINUXBUILD=CGO_ENABLED=0 GOOS=linux GOARCH=amd64 GO111MODULE=on go build
-APP_NAME=jax
+APP_NAME=airport
 
 all: build
 build:

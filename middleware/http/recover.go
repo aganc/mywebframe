@@ -58,7 +58,7 @@ func panicReport(ctx *gin.Context) {
 	//}
 	//
 	//emailContent := strings.ReplaceAll(strings.ReplaceAll(panicContent, "\r\n", "\n"), "\n", "\r\n")
-	//_, err = mail.SendMail(ctx, []string{"zhangdongsheng@anxin.com"}, "ntpanic", emailContent)
+	//_, err = mail.SendMail(ctx, []string{"zxxxx@xxx.com"}, "ntpanic", emailContent)
 	//if err != nil {
 	//	zlog.Warnf(ctx, "send mail fail. error: %v", err)
 	//}

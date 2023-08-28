@@ -1,6 +1,6 @@
 # go框架错误规范
-这里是一个按照 【[框架错误规范](http://wiki.anxin.com/pages/viewpage.action?pageId=155601339)】给出的最佳实践，
-[完整规范请查看wiki>>](http://wiki.anxin.com/pages/viewpage.action?pageId=155601339)
+这里是一个按照 【[框架错误规范]】给出的最佳实践，
+[完整规范请查看wiki>>]()
 
 
 ## 错误的定义
@@ -151,28 +151,6 @@ func Foo(ctx *gin.Context) error {
 
 ```bash
 {"level":"error","module":"errorstack","requestId":"3889369160","time":"2020-10-13 16:35:01"}
--------------------stack-start-------------------
-db update error: Error 1146: Table 'demo.demo1' doesn't exist
-demo UpdateGormDemoDescByName error, input: lee, update des
-git.anxin.com/pkg/golib/base.Error.WrapPrint
-    /Users/jason/Go/pkg/mod/git.anxin.com/pkg/golib/v2@v2.0.2-0.20201013040232-2bc9e949b471/base/error.go:55
-registrar/models.UpdateGormDemoDescByName
-    /Users/jason/GO_CODE/docker-frame/registrar/models/gorm_demo.go:69
-registrar/data.Test3
-     
-....
- 
-    /Users/jason/Go/pkg/mod/git.anxin.com/pkg/gin@v1.0.0/gin.go:361
-net/http.serverHandler.ServeHTTP
-    /usr/local/go/src/net/http/server.go:2802
-net/http.(*conn).serve
-    /usr/local/go/src/net/http/server.go:1890
-runtime.goexit
-    /usr/local/go/src/runtime/asm_amd64.s:1357
-Test3 UpdateGormDemoDescByName, input: name=lee desc=update des
-Test2, input: name=lee
-Test, input: name=lee
--------------------stack-end-------------------
 ```
 
 `errorstack` 一行json日志是错误栈开始的信息，这里可以根据`requestId` 查到。后续可以查找该行日志后的N行记录来查看详细信息:

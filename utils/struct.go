@@ -1,10 +1,3 @@
-/**************************************************************
- * Copyright (c) 2021 anxin.com, Inc. All Rights Reserved
- * User: zhangdongsheng<zhangdongsheng@anxin.com>
- * Date: 2021/9/5
- * Desc:
- **************************************************************/
-
 package utils
 
 import (
@@ -14,7 +7,7 @@ import (
 	"strings"
 )
 
-//struct 自动把int64切片转成string
+// struct 自动把int64切片转成string
 type Int64StringSlice []int64
 
 func (slice Int64StringSlice) MarshalJSON() ([]byte, error) {
