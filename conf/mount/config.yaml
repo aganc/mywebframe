@@ -1,0 +1,12 @@
+log:
+  # 日志级别, 支持 debug info warn error panic fatal ，默认info
+  level: debug
+  # 是否输出到终端，仅在开发环境有效
+  stdout: true
+  lograte: false
+  lograte_conf:
+    max_age: 30
+    max_backups: 0
+
+http:
+  address: ":8888"

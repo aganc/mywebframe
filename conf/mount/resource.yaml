@@ -1,0 +1,34 @@
+mysql:
+  base:
+    service: airport
+    database: mysql
+    addr: "127.0.0.1:3306"
+    user: "root"
+    password: "asdf123."
+    maxidleconns: 5000
+    maxopenconns: 10000
+    connMaxLifeTime: 36000
+    connTimeOut: 15000000
+    writeTimeOut: 3000000
+    readTimeOut: 30000000
+
+pgsql:
+  base:
+    service: airport
+    database: testdb
+    addr: "127.0.0.1:20000"
+    user: "vin"
+    password: "vin"
+    maxidleconns: 5000
+    maxopenconns: 10000
+    connMaxLifeTime: 36000
+    connTimeOut: 1500000
+    writeTimeOut: 300000
+    readTimeOut: 3000000
+
+redis:
+  base:
+    service: airport
+    addr: "127.0.0.1:6379"
+    user: ""
+    password: ""

@@ -1,0 +1,12 @@
+{"level":"FATAL","time":"2023-08-24 17:31:11.653499","file":"log/logger.go:75","msg":"[mysql connect error: %vdial tcp 127.0.0.1:3306: i/o timeout]"}
+{"level":"WARN","time":"2023-08-24 17:32:39.466744","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 11:47:46.18829","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 11:50:25.366935","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 12:00:04.219896","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 12:00:04.220552","file":"log/logger.go:64","msg":"pgsql connect error: []dial tcp 127.0.0.1:20000: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 12:01:21.531992","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 14:02:58.00054","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 14:04:28.819073","file":"log/logger.go:64","msg":"mysql connect error: []dial tcp 127.0.0.1:3306: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 14:13:45.332858","file":"log/logger.go:64","msg":"pgsql connect error: []dial tcp 127.0.0.1:20000: i/o timeout"}
+{"level":"WARN","time":"2023-08-25 14:15:11.581237","file":"log/logger.go:64","msg":"pgsql connect error: []driver: bad connection"}
+{"level":"WARN","time":"2023-08-25 14:21:27.707449","file":"log/logger.go:64","msg":"pgsql connect error: []cannot parse `vin:xxxxxx@tcp(127.0.0.1:20000)/testdb?`: failed to parse as DSN (invalid dsn)"}
